@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AiDiA — Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1c1c1e;
+      --muted: #6c6c70;
+      --bg: #ffffff;
+      --card: #f5f5f7;
+      --accent: #007aff;
+      --border: #e5e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f2f2f7;
+        --muted: #98989d;
+        --bg: #000000;
+        --card: #1c1c1e;
+        --accent: #0a84ff;
+        --border: #2c2c2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 8px; }
+    .tagline { color: var(--muted); margin: 0 0 40px; }
+    h2 { font-size: 1.15rem; font-weight: 600; margin: 40px 0 12px; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 24px 0 6px; }
+    p { margin: 0 0 12px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin: 16px 0;
+    }
+    .muted { color: var(--muted); font-size: 0.9rem; }
+    footer { margin-top: 64px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AiDiA — Support</h1>
+    <p class="tagline">A thoughtful, AI-assisted journaling companion.</p>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p>For questions, bug reports, or feedback, email:</p>
+      <p><a href="mailto:jsczpjx@gmail.com">jsczpjx@gmail.com</a></p>
+      <p class="muted">I'll respond within a few days.</p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Why do I need to enter my own API key?</h3>
+    <p>AiDiA uses your chosen AI provider directly — Anthropic, OpenAI, or a local Ollama server — so your journal entries never pass through our servers.</p>
+
+    <h3>Where is my journal data stored?</h3>
+    <p>On your device, and optionally synced to your personal iCloud account through Apple's CloudKit. No third-party servers, no analytics.</p>
+
+    <h3>How do I report a bug?</h3>
+    <p>Email me with your iOS version and a short description of what happened. Screenshots help.</p>
+
+    <h3>How do I delete my data?</h3>
+    <p>Delete the app from your device. If iCloud sync was enabled, also remove the AiDiA container from <em>Settings → [your name] → iCloud → Manage Storage</em>.</p>
+
+    <footer>
+      © AiDiA &middot; <a href="mailto:jsczpjx@gmail.com">Contact</a>
+    </footer>
+  </main>
+</body>
+</html>
